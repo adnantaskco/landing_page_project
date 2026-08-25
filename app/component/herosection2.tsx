@@ -85,7 +85,7 @@ const HeroSection3 = () => {
             {/* =========================================================
                 NAVIGATION
             ========================================================== */}
-           <header className="relative z-30 mx-auto flex h-[60px] max-w-[1100px] items-center justify-between  sm:h-[70px] sm:px-6 lg:h-[82px] lg:px-8">
+           <header className="relative z-30 mx-auto flex h-[60px] max-w-[1100px] items-center justify-between  sm:h-[70px] sm:px-6 lg:h-[82px] lg:px-8 ">
             {/* Left: Logo */}
             <div className="flex items-center">
               <img
@@ -96,7 +96,7 @@ const HeroSection3 = () => {
             </div>
 
             {/* Center: Navigation */}
-            <nav className="hidden items-center gap-5 text-xs text-white/90 md:flex lg:gap-7 lg:text-sm">
+            <nav className="hidden items-center md:pl-52 gap-5 text-xs text-white/90 md:flex lg:gap-7 lg:text-sm">
               {[
                 "Solution",
                 "How It Works",
