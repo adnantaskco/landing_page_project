@@ -3,7 +3,7 @@ import React from "react";
 
 const EarlyBirdSection = () => {
   return (
-    <section className="bg-white py-12 max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-10 font-sans">
+    <section className="bg-white py-5 sm:py-6 md:py-8  lg:py-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-10 ">
       <div className=" bg-[#F4F6FB] rounded-[32px] p-8 sm:p-12 lg:p-14 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center border border-gray-100 shadow-sm">
         
         {/* Left Side: Quote & Info */}

@@ -45,7 +45,7 @@ const HowItWorksSection: React.FC = () => {
   return (
     <section
     id='how-it-works'
-    className="bg-white py-16 px-4 sm:px-6 lg:px-8 font-sans">
+    className="bg-white py-5 sm:py-6 md:py-8  lg:py-10 px-4 sm:px-6 lg:px-8 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-10">
         
         {/* Top Header Row */}

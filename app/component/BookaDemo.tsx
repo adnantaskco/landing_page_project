@@ -75,7 +75,7 @@ const ConsultationSection: React.FC = () => {
   return (
     <section
     id='contact'
-    className="bg-[#F6F8FC] py-4 md:py-10">
+    className="bg-white py-4 md:py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           
@@ -101,7 +101,7 @@ const ConsultationSection: React.FC = () => {
                   </button>
                 </div>
 
-                {/* Image position */}
+                {/* Image  */}
                 <div className="absolute right-2 bottom-2 w-36 h-36 pointer-events-none flex items-center justify-center">
                   <img 
                     src={card.image} 
@@ -113,8 +113,8 @@ const ConsultationSection: React.FC = () => {
             ))}
           </div>
 
-          {/* Right Side: Demo Request Form */}
-          <div className="lg:col-span-7 p-[3px] rounded-[30px] bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400 shadow-md flex">
+          {/* Right Side */}
+          <div className="lg:col-span-7 p-1 rounded-[30px] bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400 shadow-md flex">
             <div className="bg-white rounded-[27px] p-8 sm:p-10 w-full flex flex-col justify-between">
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-1">Book A Demo!</h2>

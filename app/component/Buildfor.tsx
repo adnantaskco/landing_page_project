@@ -49,7 +49,7 @@ const features = [
 
 export default function SetupSection() {
   return (
-    <section className="relative overflow-hidden bg-[#f8fafc] px-4 py-5 text-black sm:px-6 sm:py-12 md:py-10 lg:px-8 lg:py-16">
+    <section className="relative overflow-hidden bg-white text-black px-4 sm:px-6 md:px-8 lg:px-10 py-5 sm:py-6 md:py-8  lg:py-12">
 
       {/* Background decoration */}
       <div className="pointer-events-none absolute left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-emerald-100/30 blur-3xl" />

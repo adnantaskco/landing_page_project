@@ -89,7 +89,7 @@ export default function PricingSection() {
   return (
     <section 
     id='pricing'
-      className="bg-cover bg-center bg-no-repeat text-white py-16 px-4 sm:px-6 lg:px-8 font-sans min-h-screen flex flex-col justify-center"
+      className="bg-cover bg-center bg-no-repeat text-white py-5 sm:py-6 md:py-8  lg:py-10 px-4 sm:px-6 lg:px-8  min-h-screen flex flex-col justify-center"
       style={{
         backgroundImage: `url('https://plain-apac-prod-public.komododecks.com/202608/24/bw8unGVZEs9x40hdaJde/image.png')`
       }}

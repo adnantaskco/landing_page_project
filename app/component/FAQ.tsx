@@ -45,7 +45,7 @@ const FAQSection = () => {
   return (
     <section
     id='faq'
-    className="bg-white py-10 sm:py-16 px-4 sm:px-6 lg:px-8 font-sans w-full overflow-hidden">
+    className="bg-white py-5 sm:py-6 md:py-8  lg:py-10 px-4 sm:px-6 lg:px-8  w-full overflow-hidden">
       <div className="max-w-4xl mx-auto w-full">
         
         {/* Top Header Badge */}

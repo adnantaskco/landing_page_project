@@ -52,7 +52,7 @@ const setups = [
 
 export default function SetupCardsSection() {
   return (
-    <section className="bg-white text-slate-900 py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 font-sans">
+    <section className="bg-white text-slate-900 py-5 sm:py-6 md:py-8  lg:py-10 px-4 sm:px-6 lg:px-8 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-10">
         
         {/* Header Section */}

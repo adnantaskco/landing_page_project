@@ -90,7 +90,7 @@ export default function ProblemSection() {
   };
 
   return (
-    <section className="bg-white text-slate-900 py-16 font-sans w-full overflow-hidden">
+    <section className="bg-white text-slate-900 py-5 sm:py-6 md:py-8  lg:py-10  w-full overflow-hidden">
       
       {/* Top Header Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">

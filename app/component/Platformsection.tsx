@@ -38,7 +38,7 @@ const modulesData = [
 
 export default function PlatformOSSection() {
   return (
-    <section className="mx-auto w-full max-w-7xl bg-slate-50/50 px-4 py-6 font-sans text-slate-900 sm:px-6 md:py-10 lg:py-16 sm:py-8 lg:px-8 xl:px-10">
+    <section className="mx-auto w-full max-w-7xl bg-slate-50/50 px-4 py-5 sm:py-6 md:py-8  lg:py-10  text-slate-900 sm:px-6 lg:px-8 xl:px-10">
       {/* Top Header Row */}
       <div className="mb-6 flex flex-col gap-4 sm:mb-10 sm:flex-row sm:items-end sm:justify-between">
         <div className="max-w-xl">
