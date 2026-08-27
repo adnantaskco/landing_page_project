@@ -1,19 +1,19 @@
 
-import ConsultationSection from "./component/BookaDemo";
-import SetupSection from "./component/Buildfor";
-import CaseStudySection from "./component/Casestudy";
-import EarlyBirdSection from "./component/Earlybierd";
-import FAQSection from "./component/FAQ";
-import Footer from "./component/footer";
-import HeroSection from "./component/Golive";
-import HeroSection3 from "./component/herosection2";
-import HowItWorksSection from "./component/Howitworks";
-import MarqueeSection from "./component/marqee";
-import PlatformOSSection from "./component/Platformsection";
-import PricingSection from "./component/Pricing";
-import FeaturesSection from "./component/Riskfree";
-import SetupCardsSection from "./component/Setupcard";
-import KeyStatsSection from "./component/timesection";
+import ConsultationSection from "../components/BookaDemo";
+import SetupSection from "../components/Buildfor";
+import CaseStudySection from "../components/Casestudy";
+import EarlyBirdSection from "../components/Earlybierd";
+import FAQSection from "../components/FAQ";
+import Footer from "../components/footer";
+import HeroSection from "../components/Golive";
+import HeroSection3 from "../components/herosection2";
+import HowItWorksSection from "../components/Howitworks";
+import MarqueeSection from "../components/marqee";
+import PlatformOSSection from "../components/Platformsection";
+import PricingSection from "../components/Pricing";
+import FeaturesSection from "../components/Riskfree";
+import SetupCardsSection from "../components/Setupcard";
+import KeyStatsSection from "../components/timesection";
 
 
 export default function Home() {
