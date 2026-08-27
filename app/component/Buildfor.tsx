@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Star,
   Lock,
-  SlidersHorizontal,
+  Server,
   Zap,
   ArrowUpRight,
   Check,
@@ -16,7 +16,7 @@ const features = [
       'The one-time implementation cost, cut in half. Campaign only.',
   },
   {
-    icon: SlidersHorizontal,
+    icon: Server,
     title: 'Annual at 25% off',
     description:
       'Pay twelve months upfront, hold the founding rate all year.',
@@ -34,7 +34,7 @@ const features = [
       'We move your stock, customers and ledgers across at no cost.',
   },
   {
-    icon: SlidersHorizontal,
+    icon: Server,
     title: 'A dedicated engineer',
     description:
       'One person who knows your setup, from first demo to go-live.',
@@ -49,18 +49,18 @@ const features = [
 
 export default function SetupSection() {
   return (
-    <section className="relative overflow-hidden bg-[#f8fafc] px-4 py-5 md:py-10  text-black sm:px-6 sm:py-24 lg:px-8 lg:py-28">
+    <section className="relative overflow-hidden bg-[#f8fafc] px-4 py-5 text-black sm:px-6 sm:py-12 md:py-10 lg:px-8 lg:py-16">
 
       {/* Background decoration */}
       <div className="pointer-events-none absolute left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-emerald-100/30 blur-3xl" />
 
-      <div className="relative mx-auto max-w-6xl">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 md:px-8 lg:px-8 xl:px-10">
 
         {/* Header */}
         <div className="mx-auto max-w-2xl text-center">
 
           {/* Pill */}
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-3.5 py-1.5 text-sm font-bold  text-blue-600 ">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-3.5 py-1.5 text-sm font-bold text-blue-600">
             <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-50">
               <Star className="h-3 w-3 fill-blue-50 text-blue-600" />
             </span>
@@ -92,7 +92,7 @@ export default function SetupSection() {
             return (
               <div
                 key={index}
-                className="group relative flex min-h-[235px] flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bordergradient-to-r from-[#6f51ff] via-[#9038ff] to-[#c52fff]"
+                className="group relative flex min-h-[235px] flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-500"
               >
 
                 {/* Top accent */}
@@ -101,7 +101,7 @@ export default function SetupSection() {
                 {/* Icon */}
                 <div className="mb-7 flex items-center justify-between">
 
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-emerald-100 bg-blue-50 text-blue-600 transition-all duration-300 group-hover:scale-105 group-hover:bg-gradient-to-r from-[#6f51ff] via-[#9038ff] to-[#c52fff] group-hover:text-white">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-emerald-100 bg-blue-50 text-blue-600 transition-all duration-300 group-hover:scale-105 group-hover:bg-gradient-to-r group-hover:from-[#6f51ff] group-hover:via-[#9038ff] group-hover:to-[#c52fff] group-hover:text-white">
                     <IconComponent className="h-5 w-5" />
                   </div>
 
@@ -140,7 +140,7 @@ export default function SetupSection() {
 
         {/* Bottom CTA */}
         <div className="mt-12 flex justify-center">
-          <button className="group inline-flex items-center gap-2 rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white   transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-600 ">
+          <button className="group inline-flex items-center gap-2 rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-600">
             See what's included
 
             <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

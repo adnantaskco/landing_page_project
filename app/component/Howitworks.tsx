@@ -43,8 +43,10 @@ const WORKFLOW_STEPS: WorkflowStep[] = [
 
 const HowItWorksSection: React.FC = () => {
   return (
-    <section className="bg-white py-16 px-4 sm:px-6 lg:px-8 font-sans">
-      <div className="max-w-6xl mx-auto">
+    <section
+    id='how-it-works'
+    className="bg-white py-16 px-4 sm:px-6 lg:px-8 font-sans">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-10">
         
         {/* Top Header Row */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">

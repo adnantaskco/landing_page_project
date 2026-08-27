@@ -84,7 +84,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-[#030712] text-gray-400 font-sans text-xs relative">
       {/* Top Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 pb-12 sm:pb-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-10 pt-12 sm:pt-16 pb-12 sm:pb-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 relative">
         
         {/* Column 1: Brand Info */}
         <div className="space-y-4">

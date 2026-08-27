@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star, ArrowRight } from 'lucide-react';
+import { AiOutlineLogout } from 'react-icons/ai';
 
 const setups = [
   {
@@ -52,7 +53,7 @@ const setups = [
 export default function SetupCardsSection() {
   return (
     <section className="bg-white text-slate-900 py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 font-sans">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-10">
         
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-12 gap-6">
@@ -105,7 +106,7 @@ export default function SetupCardsSection() {
                   className={`inline-flex items-center gap-1.5 text-sm sm:text-md font-semibold ${setup.accentColor} hover:opacity-80 transition-opacity`}
                 >
                   <span>Register Interest</span>
-                  <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1" />
+                  <AiOutlineLogout className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1" />
                 </button>
               </div>
 

@@ -1,10 +1,12 @@
 import React from 'react';
-import { Tag, Clock, Calendar, CreditCard } from 'lucide-react';
+import { Percent, Clock } from 'lucide-react';
+import { IoCalendarNumberOutline } from 'react-icons/io5';
+import { FaCcMastercard } from 'react-icons/fa6';
 
 const statsData = [
   {
     id: 'setup-fee',
-    icon: Tag,
+    icon: Percent,
     value: '50%',
     label: 'off your one-time setup fee',
     iconBg: 'bg-blue-50',
@@ -20,7 +22,7 @@ const statsData = [
   },
   {
     id: 'go-live',
-    icon: Calendar,
+    icon: IoCalendarNumberOutline,
     value: '2–4 wks',
     label: 'typical time to go live',
     iconBg: 'bg-blue-50',
@@ -28,7 +30,7 @@ const statsData = [
   },
   {
     id: 'price-lock',
-    icon: CreditCard,
+    icon: FaCcMastercard,
     value: '12 mo',
     label: 'price locked, no increases',
     iconBg: 'bg-blue-50',
@@ -38,20 +40,22 @@ const statsData = [
 
 export default function KeyStatsSection() {
   return (
-    <section className="w-full border-y border-slate-100 bg-white py-8 sm:py-10 md:py-12 lg:py-14">
-      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 md:px-8 lg:px-8 xl:px-10">
-        <div className="grid grid-cols-2 gap-y-8 gap-x-3 sm:gap-x-6 sm:gap-y-10 md:grid-cols-4 md:gap-6 lg:gap-8">
+    <section className="w-full  bg-white pt-4 sm:pt-4 ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-12 py-4 border-y border-slate-100">
+        <div className="grid grid-cols-2 gap-y-8 gap-x-3 sm:gap-x-6 sm:gap-y-10 md:grid-cols-4 md:gap-6  lg:gap-8">
           {statsData.map((stat) => {
-            const Icon = stat.icon;
+            const IconComponent = stat.icon;
 
             return (
               <div
                 key={stat.id}
-                className="flex min-w-0 flex-col items-center justify-center px-1 text-center sm:px-2"
+                className="flex min-w-0 flex-col items-center justify-center px-1 border-r border-slate-100 text-center sm:px-2"
               >
                 {/* Icon Container */}
-                <div className={`mb-3 flex h-10 w-10 items-center justify-center rounded-full sm:mb-4 sm:h-11 sm:w-11 md:h-12 md:w-12 ${stat.iconBg}`}>
-                  <Icon className={`h-4 w-4 sm:h-5 sm:w-5 ${stat.iconColor}`} />
+                <div
+                  className={`mb-3 flex h-10 w-10 items-center justify-center rounded-full sm:mb-4 sm:h-11 sm:w-11 md:h-12 md:w-12 ${stat.iconBg}`}
+                >
+                  <IconComponent className={`h-4 w-4 sm:h-5 sm:w-5 ${stat.iconColor}`} />
                 </div>
 
                 {/* Stat Value */}

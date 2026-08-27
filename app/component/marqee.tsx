@@ -16,47 +16,50 @@ const marqueeItems = [
 
 export default function MarqueeSection() {
   return (
-    <section className="w-full bg-white my-8 border-y border-slate-100 overflow-hidden">
-      {/* Container wrapper constrained to max-w-7xl and centered */}
-      <div className="relative max-w-7xl mx-auto py-4">
-        {/* Left Overlay Gradient */}
-        <div className="absolute top-0 bottom-0 left-0 w-16 sm:w-32 z-10 bg-gradient-to-r from-white via-white/80 to-transparent pointer-events-none" />
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-12 py-4 w-full overflow-hidden border-y border-slate-100 bg-gray-50">
+      {/* Visible viewport */}
+      <div className="relative w-full  overflow-hidden">
+        
+        {/* Left fade */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-white via-white/80 to-transparent sm:w-32" />
 
-        {/* Right Overlay Gradient */}
-        <div className="absolute top-0 bottom-0 right-0 w-16 sm:w-32 z-10 bg-gradient-to-l from-white via-white/80 to-transparent pointer-events-none" />
+        {/* Right fade */}
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-white via-white/80 to-transparent sm:w-32" />
 
-        {/* Moving Track */}
+        {/* Moving track */}
         <motion.div
-          className="flex w-max"
-          animate={{ x: "-50%" }}
+          className="flex w-max items-center"
+          animate={{ x: ["0%", "-50%"] }}
           transition={{
-            ease: "linear",
-            duration: 25,
-            repeat: Infinity,
+            x: {
+              duration: 25,
+              ease: "linear",
+              repeat: Infinity,
+            },
           }}
         >
-          {/* First track instance */}
-          <div className="flex shrink-0 items-center gap-6 sm:gap-8 pr-6 sm:pr-8">
+          {/* First */}
+          <div className="flex shrink-0 items-center gap-6 pr-6 sm:gap-8 sm:pr-8">
             {marqueeItems.map((item, idx) => (
               <div
                 key={idx}
-                className="flex items-center gap-4 sm:gap-2 whitespace-nowrap text-xs sm:text-sm font-medium text-slate-500"
+                className="flex shrink-0 items-center gap-2 whitespace-nowrap text-xs font-medium text-slate-500 sm:text-sm"
               >
-                <span className="text-slate-300">•</span><span>{item}</span>
-                
+                <span className="text-slate-300">•</span>
+                <span>{item}</span>
               </div>
             ))}
           </div>
 
-          {/* Duplicate track instance for continuous smooth looping */}
-          <div className="flex shrink-0 items-center gap-6 sm:gap-8 pr-6 sm:pr-8">
+          {/* Duplicate */}
+          <div className="flex shrink-0 items-center gap-6 pr-6 sm:gap-8 sm:pr-8">
             {marqueeItems.map((item, idx) => (
               <div
                 key={`dup-${idx}`}
-                className="flex items-center gap-4 sm:gap-2 whitespace-nowrap text-xs sm:text-sm font-medium text-slate-500"
+                className="flex shrink-0 items-center gap-2 whitespace-nowrap text-xs font-medium text-slate-500 sm:text-sm"
               >
-               <span className="text-slate-300">•</span> <span>{item}</span>
-                
+                <span className="text-slate-300">•</span>
+                <span>{item}</span>
               </div>
             ))}
           </div>

@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react';
+
 import { Star, Play, X } from 'lucide-react';
 
 const steps = [
@@ -25,7 +26,9 @@ export default function WalkthroughSection() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <section className="bg-[#FAF9F6] py-5 sm:py-8 md:py-10 px-4 sm:px-6 lg:px-12 rounded-2xl sm:rounded-3xl max-w-7xl mx-auto my-6 sm:my-8 font-sans border border-slate-200/60 shadow-sm">
+<>
+    <div className='max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-10'>
+          <section className="bg-[#FAF9F6] p-8  sm:py-8 md:py-10  rounded-2xl sm:rounded-3xl  my-6 sm:my-8  border border-slate-200/60 shadow-sm">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         
         {/* Left Column: Text & List */}
@@ -75,11 +78,12 @@ export default function WalkthroughSection() {
             {isPlaying ? (
               /* Active Video State */
               <div className="relative w-full h-full bg-black">
-                <video
-                  src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-                  controls
-                  autoPlay
-                  className="w-full h-full object-cover"
+               <iframe
+                  src="https://www.youtube.com/embed/tf_yi6DtDOQ?autoplay=1&controls=1"
+                  title="90-second walkthrough"
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
                 />
                 {/* Close/Reset Video Button */}
                 <button
@@ -117,5 +121,7 @@ export default function WalkthroughSection() {
 
       </div>
     </section>
+    </div>
+</>
   );
 }

@@ -1,16 +1,16 @@
 "use client"
 import React, { useState } from 'react';
 import { 
-  Zap, 
-  RefreshCw, 
-  Sparkles, 
-  Clock, 
-  HardDrive, 
-  Receipt, 
-  Server, 
-  Code2, 
   Star,
-  CheckCircle2
+  CheckCircle2,
+  Cog,
+  CloudDownload,
+  Sparkles,
+  Clock,
+  HardDrive,
+  Building,
+  Hand,
+  Code2
 } from 'lucide-react';
 
 const pricingData = [
@@ -73,13 +73,13 @@ const pricingData = [
 ];
 
 const enterpriseFeatures = [
-  { text: 'Unlimited builds/month', icon: Zap },
-  { text: 'Unlimited downloads/month', icon: RefreshCw },
-  { text: 'Custom features', icon: Sparkles },
-  { text: 'Guaranteed response SLA', icon: Clock },
+  { text: 'Unlimited builds/month', icon: Cog },
   { text: 'Unlimited build retention', icon: HardDrive },
-  { text: 'Custom billing', icon: Receipt },
-  { text: 'Optional self-host infra', icon: Server },
+  { text: 'Unlimited downloads/month', icon: CloudDownload },
+  { text: 'Custom billing', icon: Building },
+  { text: 'Custom features', icon: Sparkles },
+  { text: 'Optional self-host infra', icon: Hand },
+  { text: 'Guaranteed response SLA', icon: Clock },
   { text: 'Team training & Code reviews', icon: Code2 },
 ];
 
@@ -88,18 +88,19 @@ export default function PricingSection() {
 
   return (
     <section 
+    id='pricing'
       className="bg-cover bg-center bg-no-repeat text-white py-16 px-4 sm:px-6 lg:px-8 font-sans min-h-screen flex flex-col justify-center"
       style={{
         backgroundImage: `url('https://plain-apac-prod-public.komododecks.com/202608/24/bw8unGVZEs9x40hdaJde/image.png')`
       }}
     >
-      <div className="max-w-7xl mx-auto w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-10">
         
         {/* Section Header & Toggle */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
             {/* Pill Tag */}
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-dotted border-gray-300 bg- text-xs text-white mb-4">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-dotted border-gray-300 text-xs text-white mb-4">
               <Star className="w-3 h-3 fill-slate-300" />
               <span>Pricing</span>
             </div>
@@ -110,16 +111,16 @@ export default function PricingSection() {
 
             {/* Feature Badges */}
             <div className="flex flex-wrap gap-2 text-sm text-white">
-              <span className="px-2 py-1 rounded-full  border border-dotted border-white/80">
+              <span className="px-2 py-1 rounded-full border border-dotted border-white/80">
                 No long-term contracts
               </span>
-              <span className="px-2 py-1 rounded-full  border border-dotted border-white/80">
+              <span className="px-2 py-1 rounded-full border border-dotted border-white/80">
                 Upgrade anytime
               </span>
-              <span className="px-2 py-1 rounded-full  border border-dotted border-white/80">
+              <span className="px-2 py-1 rounded-full border border-dotted border-white/80">
                 Secure cloud hosting
               </span>
-              <span className="px-2 py-1 rounded-full  border border-dotted border-white/80">
+              <span className="px-2 py-1 rounded-full border border-dotted border-white/80">
                 Automatic updates
               </span>
             </div>
@@ -131,8 +132,8 @@ export default function PricingSection() {
               onClick={() => setBillingCycle('monthly')}
               className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
                 billingCycle === 'monthly'
-                  ? 'bg-blue-600 text-white '
-                  : 'text-slate-400 '
+                  ? 'bg-blue-600 text-white'
+                  : 'text-slate-400'
               }`}
             >
               Monthly
@@ -142,7 +143,7 @@ export default function PricingSection() {
               className={`px-5 py-2 rounded-full text-sm font-medium transition-all flex items-center gap-2 ${
                 billingCycle === 'annual'
                   ? 'bg-blue-600 text-white shadow-sm'
-                  : 'text-slate-400 '
+                  : 'text-slate-400'
               }`}
             >
               <span>Annual</span>
@@ -216,7 +217,7 @@ export default function PricingSection() {
         {/* Custom & Enterprise Banner Card */}
         <div className="bg-slate-100 text-slate-900 rounded-2xl p-6 md:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-6">
           <div className="lg:col-span-5">
-            <span className="inline-block px-2.5 py-0.5 rounded-full border border-dotted border-blue-600  text-sm font-lg tracking-wider text-blue-600 uppercase mb-3">
+            <span className="inline-block px-2.5 py-0.5 rounded-full border border-dotted border-blue-600 text-sm font-lg tracking-wider text-blue-600 uppercase mb-3">
               CUSTOM & ENTERPRISE
             </span>
             <h3 className="text-xl font-bold mb-2">Built around how your group runs.</h3>

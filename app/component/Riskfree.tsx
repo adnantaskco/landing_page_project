@@ -17,7 +17,7 @@ const FeaturesSection = () => {
 
   return (
     <section className="bg-white py-12 px-4 sm:px-6 lg:px-8 font-sans">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
         
         {/* Card 1: Risk-Free */}
         <div className="bg-[#F4F5F7] rounded-3xl p-8 sm:p-10 flex flex-col justify-between overflow-hidden relative shadow-sm border border-gray-100">

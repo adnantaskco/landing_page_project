@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from 'react';
 import { FaChevronDown, FaChevronUp, FaStar } from 'react-icons/fa6';
 
@@ -36,7 +36,6 @@ const FAQ_DATA = [
 ];
 
 const FAQSection = () => {
-  // First item open by default as shown in the mockup
   const [openId, setOpenId] = useState(1);
 
   const toggleAccordion = (id) => {
@@ -44,21 +43,23 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="bg-white py-16 px-4 sm:px-6 lg:px-8 font-sans">
-      <div className="max-w-3xl mx-auto">
+    <section
+    id='faq'
+    className="bg-white py-10 sm:py-16 px-4 sm:px-6 lg:px-8 font-sans w-full overflow-hidden">
+      <div className="max-w-4xl mx-auto w-full">
         
         {/* Top Header Badge */}
-        <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-[#3B82F6] text-xs font-semibold mb-4">
+        <div className="text-center mb-6 sm:mb-8">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-[#3B82F6] text-[10px] sm:text-xs font-semibold mb-3 sm:mb-4">
             <FaStar size={10} />
             <span>FAQ</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight mb-3">
+          <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 tracking-tight mb-2 sm:mb-3">
             Frequently asked questions
           </h2>
 
-          <p className="text-sm text-gray-500">
+          <p className="text-xs sm:text-sm text-gray-500 leading-normal px-2 sm:px-0">
             Find answers to your questions right here, and don't hesitate to{' '}
             <a href="#" className="underline text-gray-700 hover:text-black">
               Contact us
@@ -68,28 +69,28 @@ const FAQSection = () => {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-gray-100 mb-6" />
+        <div className="border-t border-gray-100 mb-4 sm:mb-6" />
 
         {/* Accordion List */}
         <div className="divide-y divide-gray-100">
           {FAQ_DATA.map((faq) => {
             const isOpen = openId === faq.id;
             return (
-              <div key={faq.id} className="py-5 transition-all">
+              <div key={faq.id} className="py-4 sm:py-5 transition-all">
                 <button
                   onClick={() => toggleAccordion(faq.id)}
-                  className="w-full flex justify-between items-center text-left gap-4 focus:outline-none group"
+                  className="w-full flex justify-between items-center text-left gap-3 sm:gap-4 focus:outline-none group cursor-pointer"
                 >
-                  <span className="text-sm sm:text-base font-semibold text-gray-800 group-hover:text-black">
+                  <span className="text-xs sm:text-base font-semibold text-gray-800 group-hover:text-black leading-snug">
                     {faq.question}
                   </span>
-                  <span className="text-gray-400 shrink-0">
-                    {isOpen ? <FaChevronUp size={12} /> : <FaChevronDown size={12} />}
+                  <span className="text-gray-400 shrink-0 p-1">
+                    {isOpen ? <FaChevronUp size={11} /> : <FaChevronDown size={11} />}
                   </span>
                 </button>
 
                 {isOpen && (
-                  <p className="mt-3 text-xs sm:text-sm text-gray-400 leading-relaxed max-w-2xl">
+                  <p className="mt-2 sm:mt-3 text-[11px] sm:text-sm text-gray-500 leading-relaxed max-w-2xl">
                     {faq.answer}
                   </p>
                 )}
@@ -99,8 +100,8 @@ const FAQSection = () => {
         </div>
 
         {/* Bottom Button */}
-        <div className="mt-10 text-center">
-          <button className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-gray-200 text-xs font-semibold text-gray-700 hover:bg-gray-50 transition-colors shadow-sm">
+        <div className="mt-8 sm:mt-10 text-center">
+          <button className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl border border-gray-200 text-xs font-semibold text-gray-700 hover:bg-gray-50 transition-colors shadow-xs active:bg-gray-100 cursor-pointer">
             Load more <FaChevronDown size={10} className="text-gray-500" />
           </button>
         </div>

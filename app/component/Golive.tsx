@@ -14,9 +14,9 @@ const CTA_DATA = {
 
 const CTASection = () => {
   return (
-    <section className="max-w-6xl mx-auto px-4 py-8">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-10 py-8">
       <div 
-        className="bg-cover bg-center bg-no-repeat rounded-2xl overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-2"
+        className="bg-cover bg-center bg-no-repeat rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-2"
         style={{
           backgroundImage: `url('https://plain-apac-prod-public.komododecks.com/202608/24/ffz0T2ZdXxiuWF7SP2Te/image.png')`
         }}
