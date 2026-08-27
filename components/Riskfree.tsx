@@ -3,10 +3,7 @@ import React from 'react';
 import { FaCheck } from 'react-icons/fa6';
 
 const FeaturesSection = () => {
-  const card1Features = [
-    { label: "Your private subdomain, your stock and customers loaded, guides built in." },
-    { label: "Not a fit? Say so within 7 days — setup fee refunded in full." }
-  ];
+
 
   const card2Features = [
     "50% off the one-time setup fee",

@@ -73,7 +73,7 @@ const HowItWorksSection: React.FC = () => {
           </button>
         </div>
 
-        {/* Integrated Horizontal Scrollable Container for Mobile / Grid for Desktop */}
+        {/*  Grid for Desktop */}
         <div className="flex lg:grid lg:grid-cols-4 gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-none pb-4 lg:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0">
           {WORKFLOW_STEPS.map((step) => (
             <div 

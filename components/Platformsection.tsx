@@ -72,7 +72,7 @@ export default function PlatformOSSection() {
               key={item.id}
               className="flex w-full flex-row overflow-hidden rounded-2xl border border-slate-200/90 bg-white p-2.5 shadow-xs transition-all hover:shadow-md sm:flex-col sm:p-0"
             >
-              {/* Image Container - Fixed 35% width on mobile, full width on tablet/desktop */}
+          
               <div className="relative aspect-square w-1/3 shrink-0 overflow-hidden rounded-xl bg-slate-50 sm:aspect-[16/10] sm:w-full sm:rounded-b-none sm:rounded-t-2xl">
                 <img
                   src={item.imageSrc}

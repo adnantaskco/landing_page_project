@@ -79,7 +79,7 @@ export default function SetupCardsSection() {
           </button>
         </div>
 
-        {/* 5 Cards Horizontal Scroll on Mobile / Responsive Grid on Desktop */}
+        {/* 5 Cards  */}
         <div className="flex lg:grid lg:grid-cols-5 gap-3 overflow-x-auto snap-x snap-mandatory scrollbar-none pb-4 lg:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0">
           {setups.map((setup) => (
             <div
@@ -110,7 +110,7 @@ export default function SetupCardsSection() {
                 </button>
               </div>
 
-              {/* Bottom Image - Same Level */}
+              {/* Bottom Image  */}
               <div className="absolute left-5 right-5 bottom-0 h-[145px] sm:h-[155px] flex items-center justify-center">
                 <img
                   src={setup.imageSrc}

@@ -52,6 +52,7 @@ export default function WalkthroughSection() {
             <ul className="space-y-4 sm:space-y-5">
               {steps.map((step, index) => (
                 <li key={index} className="flex items-start gap-3">
+
                   {/* Square Bullet */}
                   <span className="w-1.5 h-1.5 rounded-xs bg-slate-800 mt-1.5 shrink-0" />
                   
@@ -70,7 +71,7 @@ export default function WalkthroughSection() {
             </ul>
           </div>
 
-          {/* Right Column: Responsive Video Player Frame */}
+          {/* Right Column */}
           <div className="lg:col-span-7 w-full mt-2 lg:mt-0">
             <div className="relative w-full rounded-xl sm:rounded-2xl overflow-hidden bg-slate-900 aspect-video lg:aspect-[16/10] group shadow-md border border-slate-800">
               {isPlaying ? (

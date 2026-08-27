@@ -77,9 +77,9 @@ const HeroSection3 = () => {
       />
 
       <div className="relative w-full overflow-hidden pb-10 sm:pb-16 lg:pb-20">
-        {/* =========================================================
-            TOP ANNOUNCEMENT BAR
-        ========================================================== */}
+        
+        {/* TOP ANNOUNCEMENT BAR */}
+        
         <div className="relative z-50 flex h-auto py-1.5 min-h-[32px] items-center justify-center bg-gradient-to-r from-[#0b4edb] via-[#4d50d8] to-[#8065dc] px-3 text-[10px] sm:text-xs text-center">
           <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2">
             <span className="rounded-full bg-[#202d83] px-2.5 py-0.5 font-semibold text-white">
@@ -89,9 +89,8 @@ const HeroSection3 = () => {
           </div>
         </div>
 
-        {/* =========================================================
-            NAVIGATION BAR
-        ========================================================== */}
+        {/*  NAVIGATION BAR */}
+
         <header className="relative z-40 w-full border-b border-white/5">
           <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 md:px-8 lg:h-20 lg:px-8 xl:px-10">
             {/* Left: Logo */}
@@ -169,9 +168,7 @@ const HeroSection3 = () => {
           )}
         </header>
 
-        {/* =========================================================
-            HERO CONTENT
-        ========================================================== */}
+        {/*  HERO CONTENT*/}
         <div className="relative z-20 mx-auto flex max-w-[1000px] flex-col items-center px-4 pt-8 text-center sm:pt-12 md:pt-16 lg:pt-20">
           <div className="mb-5 flex items-center gap-1 rounded-full border border-white/10 bg-white/[0.08] px-3 py-1 text-xs font-medium text-white/80 backdrop-blur-md sm:mb-6 sm:gap-1.5 sm:px-4 sm:text-sm">
             <Sparkles size={14} />
@@ -204,9 +201,7 @@ const HeroSection3 = () => {
             </button>
           </div>
 
-          {/* =========================================================
-              DYNAMIC COUNTDOWN TIMER
-          ========================================================== */}
+          {/*  DYNAMIC COUNTDOWN TIMER */}
           <div className="relative mt-10 w-full max-w-[420px] sm:mt-12 sm:max-w-[480px]">
             {/* Outer Glow & Gradient Border */}
             <div className="relative rounded-xl bg-gradient-to-r from-[#8da3ff] via-[#d1b8ff] to-[#edb2bb] p-1.5 shadow-xl shadow-black/10">
@@ -299,11 +294,11 @@ const HeroSection3 = () => {
                 flowzen.io/dashboard
               </div>
             </div>
-            <div className="relative aspect-[16/9] sm:aspect-[18/10] w-full bg-[#0d0d0d]">
+            <div className="relative w-full aspect-video overflow-hidden bg-black">
               <iframe
-                src="https://www.youtube.com/embed/fZ_Kvy3bRbc?autoplay=1&mute=1&loop=1&playlist=fZ_Kvy3bRbc"
-                title="Flowzen Dashboard Demo"
-                className="h-full w-full border-0"
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/5JsinzbNm5M?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&iv_load_policy=3&disablekb=1&start=0&end=60"
+                title="Video"
                 allow="autoplay; encrypted-media"
                 allowFullScreen
               />
